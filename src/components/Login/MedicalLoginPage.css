@@ -1,0 +1,270 @@
+:root {
+  --medical-blue: #2b6cb0;
+  --medical-light-blue: #4299e1;
+  --medical-gray: #718096;
+  --emergency-red: #e53e3e;
+  --success-green: #48bb78;
+}
+
+.mlp-login-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100vh;
+  background: linear-gradient(135deg, #f6f8fb 0%, #e9f1f9 100%);
+  padding: 1rem;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.mlp-login-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  max-width: 900px;
+  min-height: 550px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.mlp-login-image {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.mlp-login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mlp-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+.mlp-login-box {
+  flex: 1;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.mlp-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.mlp-hospital-icon {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.mlp-user-type-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mlp-type-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mlp-type-btn.mlp-active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.mlp-form-group {
+  margin-bottom: 1rem;
+}
+
+.mlp-input-group {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.mlp-input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+}
+
+.mlp-input-group input {
+  width: 90%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.mlp-input-group input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.mlp-remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.mlp-login-button {
+  width: 100%;
+  padding: 0.875rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mlp-login-button:hover {
+  background: #1d4ed8;
+}
+
+.mlp-divider {
+  position: relative;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.mlp-divider::before,
+.mlp-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background: #e2e8f0;
+}
+
+.mlp-divider::before {
+  left: 0;
+}
+
+.mlp-divider::after {
+  right: 0;
+}
+
+.mlp-social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mlp-google-btn,
+.mlp-facebook-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mlp-google-btn:hover,
+.mlp-facebook-btn:hover {
+  background: #f8fafc;
+}
+
+.mlp-facebook-btn {
+  background: #1877f2;
+  color: white;
+  border: none;
+}
+
+.mlp-facebook-btn:hover {
+  background: #1664d9;
+}
+
+.mlp-signup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.mlp-signup-link a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mlp-forgot-link {
+  float: right;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .mlp-login-wrapper {
+    flex-direction: column;
+    max-width: 400px;
+    min-height: auto;
+  }
+
+  .mlp-login-image {
+    display: none;
+  }
+
+  .mlp-login-box {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mlp-login-container {
+    padding: 0.5rem;
+  }
+
+  .mlp-login-wrapper {
+    border-radius: 12px;
+  }
+
+  .mlp-social-login {
+    flex-direction: column;
+  }
+}
