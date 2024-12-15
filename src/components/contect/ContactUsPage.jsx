@@ -5,17 +5,6 @@ import "./ContactUsPage.css";
 const ContactUs = () => {
   return (
     <>
-      <head>
-        <meta charset="utf-8" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous"
-        />
-
-        <title>React App</title>
-      </head>
       <div className="App" id="scroll">
         <div className="fixed-navbar"></div>
 
@@ -96,7 +85,7 @@ const ContactUs = () => {
                 <div className="wpo-contact-form-area">
                   <form className="contact-validation-active">
                     <div className="row">
-                      <div className="col col-lg-6 col-12">
+                      <div className=" col-lg-6 ">
                         <div className="form-field">
                           <input
                             type="text"
@@ -105,7 +94,7 @@ const ContactUs = () => {
                           />
                         </div>
                       </div>
-                      <div className="col col-lg-6 col-12">
+                      <div className="col-lg-6 ">
                         <div className="form-field">
                           <input
                             type="email"
@@ -114,7 +103,7 @@ const ContactUs = () => {
                           />
                         </div>
                       </div>
-                      <div className="col col-lg-6 col-12">
+                      <div className="col-lg-6 ">
                         <div className="form-field">
                           <input
                             type="phone"
@@ -123,7 +112,7 @@ const ContactUs = () => {
                           />
                         </div>
                       </div>
-                      <div className="col col-lg-6 col-12">
+                      <div className="col-lg-6 ">
                         <div className="form-field">
                           <select name="subject">
                             <option>Services</option>
@@ -136,7 +125,7 @@ const ContactUs = () => {
                           </select>
                         </div>
                       </div>
-                      <div className="col col-lg-12 col-12">
+                      <div className="col-lg-6 ">
                         <textarea
                           name="message"
                           placeholder="Message"

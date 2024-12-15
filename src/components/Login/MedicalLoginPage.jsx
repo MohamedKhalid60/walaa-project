@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { FaUserMd, FaLock, FaGoogle, FaFacebookF } from 'react-icons/fa';
-import { MdLocalHospital } from 'react-icons/md';
-import './MedicalLoginPage.css';
-import medicalBg from '../../assets/images/2.jpg';
+import React, { useState } from "react";
+import { FaUserMd, FaLock, FaGoogle, FaFacebookF } from "react-icons/fa";
+import { MdLocalHospital } from "react-icons/md";
+import "./MedicalLoginPage.css";
+import medicalBg from "../../assets/images/2.jpg";
 
 const MedicalLoginPage = () => {
   const [formData, setFormData] = useState({
-    email: '',
-    password: '',
+    email: "",
+    password: "",
     rememberMe: false,
-    userType: 'patient' 
-});
+    userType: "patient",
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,14 +37,18 @@ const MedicalLoginPage = () => {
 
           <div className="mlp-user-type-toggle">
             <button
-              className={`mlp-type-btn ${formData.userType === 'patient' ? 'mlp-active' : ''}`}
-              onClick={() => setFormData({...formData, userType: 'patient'})}
+              className={`mlp-type-btn ${
+                formData.userType === "patient" ? "mlp-active" : ""
+              }`}
+              onClick={() => setFormData({ ...formData, userType: "patient" })}
             >
               Patient
             </button>
             <button
-              className={`mlp-type-btn ${formData.userType === 'doctor' ? 'mlp-active' : ''}`}
-              onClick={() => setFormData({...formData, userType: 'doctor'})}
+              className={`mlp-type-btn ${
+                formData.userType === "doctor" ? "mlp-active" : ""
+              }`}
+              onClick={() => setFormData({ ...formData, userType: "doctor" })}
             >
               Healthcare Provider
             </button>
@@ -58,16 +62,26 @@ const MedicalLoginPage = () => {
                 <input
                   type="email"
                   value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  placeholder={formData.userType === 'patient' ? "Enter your email" : "Enter your medical email"}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
+                  placeholder={
+                    formData.userType === "patient"
+                      ? "Enter your email"
+                      : "Enter your medical email"
+                  }
                 />
               </div>
             </div>
 
             <div className="mlp-form-group">
               <label>
-                Password 
-                <a href="/forgot-password" className="mlp-forgot-link" style={{ }}>
+                Password
+                <a
+                  href="/forgot-password"
+                  className="mlp-forgot-link"
+                  style={{}}
+                >
                   Forgot your password?
                 </a>
               </label>
@@ -76,7 +90,9 @@ const MedicalLoginPage = () => {
                 <input
                   type="password"
                   value={formData.password}
-                  onChange={(e) => setFormData({...formData, password: e.target.value})}
+                  onChange={(e) =>
+                    setFormData({ ...formData, password: e.target.value })
+                  }
                   placeholder="Enter your password"
                 />
               </div>
@@ -87,7 +103,9 @@ const MedicalLoginPage = () => {
                 id="rememberMe"
                 type="checkbox"
                 checked={formData.rememberMe}
-                onChange={(e) => setFormData({...formData, rememberMe: e.target.checked})}
+                onChange={(e) =>
+                  setFormData({ ...formData, rememberMe: e.target.checked })
+                }
                 className="mlp-remember-checkbox"
               />
               <label htmlFor="rememberMe" className="mlp-remember-label">
@@ -99,7 +117,7 @@ const MedicalLoginPage = () => {
               Access Portal
             </button>
 
-            {formData.userType === 'patient' && (
+            {formData.userType === "patient" && (
               <>
                 <div className="mlp-divider">
                   <span>OR</span>
@@ -118,10 +136,17 @@ const MedicalLoginPage = () => {
           </form>
 
           <div className="mlp-signup-link">
-            {formData.userType === 'patient' ? (
-              <>New patient? <a href="registration">Register here</a></>
+            {formData.userType === "patient" ? (
+              <>
+                New patient? <a href="registration">Register here</a>
+              </>
             ) : (
-              <>Healthcare provider? <a href="/registration?userType=doctor">Apply for credentials</a></>
+              <>
+                Healthcare provider?{" "}
+                <a href="/registration?userType=doctor">
+                  Apply for credentials
+                </a>
+              </>
             )}
           </div>
         </div>
@@ -130,4 +155,4 @@ const MedicalLoginPage = () => {
   );
 };
 
-export default MedicalLoginPage; 
+export default MedicalLoginPage;
