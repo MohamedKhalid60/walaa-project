@@ -8,7 +8,22 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url(../../assets/images/bg.avif);
+  background-image: url(../../assets/images/welcom.jpg);
+}
+img {
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row .col-lg-6 {
+  width: 50%;
 }
 .home h1 {
   text-transform: uppercase;
@@ -16,8 +31,12 @@
   font-size: 60px;
   color: rgb(25, 70, 174);
 }
+.home .item {
+  position: relative;
+  z-index: 22;
+}
 .home p {
-  font-size: 25px;
+  font-size: 32px;
   line-height: 50px;
   letter-spacing: 4px;
   color: rgba(31, 63, 139, 0.758);
@@ -38,10 +57,14 @@
   text-transform: capitalize;
   color: black;
   letter-spacing: 3px;
+  text-align: center;
+}
+.about .card h3 {
+  padding-left: 20px;
 }
 .about p {
-  color: rgba(31, 63, 139, 0.758);
-  font-size: 20px;
+  color: rgb(25, 70, 174);
+  font-size: 16px;
   text-align: start;
   padding: 15px;
 }
@@ -50,4 +73,46 @@
 }
 .about h2 span {
   color: rgb(25, 70, 174);
+}
+.about h2 {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+.about .card p .fgp-input-icon {
+  padding: 0 10px;
+  color: rgb(199, 197, 197);
+}
+.about h3 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 40px;
+  padding: 0 20px;
+}
+.choose .card p {
+  color: rgb(25, 70, 174);
+  font-size: 16px;
+  /* margin-top: 5px; */
+  margin-left: 50px;
+}
+.choose .card p .fgp-input-icon {
+  padding-right: 10px;
+  color: rgb(199, 197, 197);
+}
+.choose .card h4 {
+  font-size: 22px;
+}
+.choose .card h4 span {
+  margin-right: 15px;
+  padding: 8px 15px;
+  color: rgb(25, 70, 174);
+  background-color: rgba(255, 255, 255, 0.852);
+  border-radius: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+.choose .card {
+  margin: 10px;
 }

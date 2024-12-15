@@ -1,6 +1,6 @@
 import React from "react";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { FaStar } from "react-icons/fa";
+
 import "./Home.css";
 const Home = () => {
   return (
@@ -23,13 +23,19 @@ const Home = () => {
       </section>
       <section className="about">
         <div className="container">
+          <h2>
+            about <span>brain tumor </span>
+          </h2>
           <div className="row">
             <div className="col-lg-6">
               <div className="card text-center">
-                <h2>
-                  about <span>brain tumor :</span>
-                </h2>
+                <h3>
+                  A brain tumor is a growth of cells in the brain or near it.
+                  Brain tumors can happen in the brain tissue. Brain tumors also
+                  can happen near the brain tissue
+                </h3>
                 <p>
+                  <FaStar className="fgp-input-icon" />
                   There are many types of brain tumors. The type of brain tumor
                   is based on the kind of cells that make up the tumor. Special
                   lab tests on the tumor cells can give information about the
@@ -39,7 +45,7 @@ const Home = () => {
                   tumors or benign brain tumors. Some types of brain tumors
                   usually are cancerous. These types are called brain cancers or
                   malignant brain tumors. Some brain tumor types can be benign
-                  or malignant
+                  or malignant.
                 </p>
               </div>
             </div>
@@ -56,6 +62,9 @@ const Home = () => {
       </section>
       <section className="about choose">
         <div className="container">
+          <h2>
+            Why you <span>choose</span> us ?
+          </h2>
           <div className="row">
             <div className="col-lg-6">
               <div className="card">
@@ -66,18 +75,44 @@ const Home = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="card text-center">
-                <h2>
-                  Why you <span>choose</span> us ?
-                </h2>
+              <div className="card ">
+                <h4>
+                  {" "}
+                  <span>1</span>
+                  Professional medical service
+                </h4>
                 <p>
-                  There are many types of brain tumors. The type of brain tumor
-                  is based on the kind of cells that make up the tumor. Special
-                  lab tests on the tumor cells can give information about the
-                  cells. Your health care team uses this information to figure
-                  out the type of brain tumor. Some types of brain tumors
-                  usually aren't cancerous. These are called noncancerous brain
-                  tumors or benign brain tumors.
+                  <FaStar className="fgp-input-icon" />
+                  Professional medical services has been opening for business,
+                  since Jule 2020.with the dream of mind to provide perfect
+                  healthy care.
+                </p>
+                <h4>
+                  <span>2</span>
+                  Dedicated patient care
+                </h4>
+                <p>
+                  {" "}
+                  <FaStar className="fgp-input-icon" />
+                  We provide them with the most accurate X-ray analysis.
+                </p>
+                <h4>
+                  {" "}
+                  <span>3</span>
+                  Experienced Generalists & Specialists
+                </h4>
+                <p>
+                  <FaStar className="fgp-input-icon" />
+                  We provide specialist doctors in the field with high
+                  experience to provide an efficient result.
+                </p>
+                <h4>
+                  <span>4</span>Hours of operation and cost
+                </h4>
+                <p>
+                  <FaStar className="fgp-input-icon" />
+                  The site is available all the time and the service provided is
+                  free.
                 </p>
               </div>
             </div>

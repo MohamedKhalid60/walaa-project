@@ -1,34 +1,58 @@
+header .container-fluid {
+  width: 100%;
+  margin: auto;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+header .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* header .row .card {
+  width: 20%;
+} */
+
+header .d-flex {
+  display: flex;
+  align-items: center;
+}
 .header .navbar-brand {
-  letter-spacing: 2px !important;
+  letter-spacing: 4px !important;
   font-size: 22px;
   font-weight: 700;
   color: rgb(0, 67, 167) !important;
+  text-decoration: none;
 }
-.header .navbar-brand img {
+.header img {
   width: 50px;
-  margin: 0 10px;
+  margin: 0 10px 10px;
 }
 nav {
+  padding: 10px;
   /* border-radius: 0 0 10px 10px; */
   background: linear-gradient(
     to left,
-    rgba(11, 31, 76, 0.183),
-    rgba(50, 150, 250, 0.747),
-    rgba(200, 200, 250, 0.2)
+    rgba(11, 31, 76, 0.427),
+    rgba(50, 150, 250, 0.9),
+    rgba(200, 200, 250, 0.728)
   );
   box-shadow: 2px 2px 100px 1px rgba(0, 0, 0, 0.132);
 }
 .header .nav-link {
-  font-size: 18px;
+  font-size: 16px;
   padding: 15px !important;
   transition: all 0.5s;
   margin-left: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #fff !important;
   font-weight: 500;
 }
-.header .nav-link:hover {
+.header .nav-link a:hover {
   color: blue !important;
 }
 .header {
@@ -38,6 +62,25 @@ nav {
   left: 0;
 }
 .header .btn {
-  padding: 5px 35px !important ;
+  padding: 8px 35px !important ;
+  background-color: white;
+  color: blue;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s;
+
   /* font-weight: 300; */
+}
+.header .btn:hover {
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none !important;
+  color: #fff !important;
 }
