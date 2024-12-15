@@ -461,7 +461,6 @@
 }
 .theme-btn,
 .view-cart-btn {
-  -webkit-backface-visibility: hidden;
   background: linear-gradient(
     358deg,
     #1e63ff -1077.15%,
