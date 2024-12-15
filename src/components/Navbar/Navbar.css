@@ -37,9 +37,9 @@ nav {
   /* border-radius: 0 0 10px 10px; */
   background: linear-gradient(
     to left,
-    rgba(11, 31, 76, 0.427),
-    rgba(50, 150, 250, 0.9),
-    rgba(200, 200, 250, 0.728)
+    rgb(11, 31, 76),
+    rgb(9, 42, 75),
+    rgb(200, 200, 250)
   );
   box-shadow: 2px 2px 100px 1px rgba(0, 0, 0, 0.132);
 }
@@ -83,4 +83,26 @@ header ul li {
 header ul li a {
   text-decoration: none !important;
   color: #fff !important;
+}
+@media (min-width: 320px) and (max-width: 667px) {
+  header .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .d-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    background: linear-gradient(
+      to left,
+      rgb(11, 31, 76),
+      rgb(9, 42, 75),
+      rgb(200, 200, 250)
+    );
+  }
 }
