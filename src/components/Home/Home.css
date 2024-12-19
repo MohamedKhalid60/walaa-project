@@ -57,7 +57,11 @@ img {
   text-transform: capitalize;
   color: black;
   letter-spacing: 3px;
-  text-align: center;
+  text-align: end !important;
+  margin-right: 100px;
+}
+.about .about-title {
+  text-align: start !important;
 }
 .about .card h3 {
   padding-left: 20px;
