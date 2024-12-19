@@ -23,11 +23,11 @@ const Home = () => {
       </section>
       <section className="about">
         <div className="container">
-          <h2>
-            about <span>brain tumor </span>
-          </h2>
           <div className="row">
             <div className="col-lg-6">
+              <h2>
+                about <span>brain tumor: </span>
+              </h2>
               <div className="card text-center">
                 <h3>
                   A brain tumor is a growth of cells in the brain or near it.
@@ -62,9 +62,6 @@ const Home = () => {
       </section>
       <section className="about choose">
         <div className="container">
-          <h2>
-            Why you <span>choose</span> us ?
-          </h2>
           <div className="row">
             <div className="col-lg-6">
               <div className="card">
@@ -75,6 +72,9 @@ const Home = () => {
               </div>
             </div>
             <div className="col-lg-6">
+              <h2>
+                Why you <span>choose</span> us ?
+              </h2>
               <div className="card ">
                 <h4>
                   {" "}

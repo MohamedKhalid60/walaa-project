@@ -1,0 +1,83 @@
+.container {
+  margin: auto;
+  width: 80%;
+}
+.footer .item img {
+  width: 50px !important;
+}
+.footer .row .row {
+  justify-content: start;
+}
+.footer {
+  margin-top: 80px;
+  padding: 30px 0;
+  background: linear-gradient(
+    to left,
+
+    rgb(196, 196, 248),
+    rgb(11, 31, 76),
+    rgb(9, 42, 75)
+  );
+  box-shadow: 2px 2px 100px 1px rgba(0, 0, 0, 0.132);
+}
+.footer .item {
+  letter-spacing: 4px !important;
+  border-right: 2px solid #faf5f5;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(253, 254, 255) !important;
+}
+.footer .item h2 {
+  padding: 20px;
+}
+.footer a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #faf5f5;
+}
+.footer .card p {
+  padding: 20px;
+  color: #faf5f5;
+}
+.footer .fgp-input-icon {
+  /* width: 50px; */
+  font-size: 30px;
+  transition: all 0.5s;
+}
+.footer .fgp-input-icon:hover {
+  color: blue;
+  transform: rotate(360deg);
+  transform: scale(1.4);
+}
+.footer .last_card p {
+  color: #faf5f5;
+  text-align: end;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.footer .last_card .row {
+  text-align: end !important;
+  justify-content: end;
+}
+@media (min-width: 320px) and (max-width: 667px) {
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer {
+    background: linear-gradient(
+      to left,
+      rgb(11, 31, 76),
+      rgb(9, 42, 75),
+      rgb(200, 200, 250)
+    );
+    text-align: center !important;
+  }
+  footer .last_card p {
+    text-align: center !important;
+  }
+}

@@ -66,7 +66,7 @@ img {
   color: rgb(25, 70, 174);
   font-size: 16px;
   text-align: start;
-  padding: 15px;
+  padding: 5px;
 }
 .about {
   margin: 120px 0 !important;
@@ -76,9 +76,9 @@ img {
 }
 .about h2 {
   padding: 10px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   font-size: 40px;
-  text-align: center;
+  text-align: start;
 }
 .about .card p .fgp-input-icon {
   padding: 0 10px;
@@ -89,7 +89,7 @@ img {
   font-size: 32px;
   font-weight: 200;
   line-height: 40px;
-  padding: 0 20px;
+  padding: 20px;
 }
 .choose .card p {
   color: rgb(25, 70, 174);
