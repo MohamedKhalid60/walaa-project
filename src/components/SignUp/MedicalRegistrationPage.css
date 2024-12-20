@@ -76,6 +76,9 @@
   justify-content: center;
   gap: 10px;
 }
+.mrp-logo img {
+  width: 50px;
+}
 
 .mrp-hospital-icon {
   font-size: 2rem;

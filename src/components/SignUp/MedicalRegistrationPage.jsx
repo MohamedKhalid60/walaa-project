@@ -12,6 +12,7 @@ import {
 import { MdLocalHospital } from "react-icons/md";
 import "./MedicalRegistrationPage.css";
 import medicalBg from "../../assets/images/3.jpg";
+import Logo from "../../assets/images/brain-21.svg";
 
 const specializations = [
   "Cardiology",
@@ -754,8 +755,8 @@ const MedicalRegistrationPage = () => {
 
         <div className="mrp-registration-box">
           <div className="mrp-logo">
-            <MdLocalHospital className="mrp-hospital-icon" />
-            <h1>MediCare</h1>
+            <img src={Logo} alt="" />
+            <h1>Brain tumor</h1>
             <h2>Join Our Healthcare Community</h2>
             <p>Register to access our comprehensive healthcare services</p>
           </div>
@@ -775,7 +776,7 @@ const MedicalRegistrationPage = () => {
               >
                 Patient
               </button>
-              <button
+              {/* <button
                 type="button"
                 className={`mrp-type-btn ${
                   formData.userType === "doctor" ? "active" : ""
@@ -783,7 +784,7 @@ const MedicalRegistrationPage = () => {
                 onClick={() => setFormData({ ...formData, userType: "doctor" })}
               >
                 Healthcare Provider
-              </button>
+              </button> */}
             </div>
 
             {renderStepContent()}

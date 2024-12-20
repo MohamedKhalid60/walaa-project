@@ -3,6 +3,7 @@ import { FaUserMd, FaLock, FaGoogle, FaFacebookF } from "react-icons/fa";
 import { MdLocalHospital } from "react-icons/md";
 import "./MedicalLoginPage.css";
 import medicalBg from "../../assets/images/2.jpg";
+import Logo from "../../assets/images/brain-21.svg";
 
 const MedicalLoginPage = () => {
   const [formData, setFormData] = useState({
@@ -30,28 +31,26 @@ const MedicalLoginPage = () => {
 
         <div className="mlp-login-box">
           <div className="mlp-logo">
-            <MdLocalHospital className="mlp-hospital-icon" />
-            <h1>MediCare</h1>
+            <img src={Logo} alt="" />
+            <h1>Brain Tumor</h1>
             <h3>Welcome to Healthcare Portal</h3>
           </div>
 
           <div className="mlp-user-type-toggle">
             <button
-              className={`mlp-type-btn ${
+              className={`mlp-type-btn  ${
                 formData.userType === "patient" ? "mlp-active" : ""
               }`}
               onClick={() => setFormData({ ...formData, userType: "patient" })}
-            >
-              Patient
-            </button>
-            <button
+            ></button>
+            {/* <button
               className={`mlp-type-btn ${
                 formData.userType === "doctor" ? "mlp-active" : ""
               }`}
               onClick={() => setFormData({ ...formData, userType: "doctor" })}
             >
               Healthcare Provider
-            </button>
+            </button> */}
           </div>
 
           <form onSubmit={handleSubmit}>
@@ -117,7 +116,7 @@ const MedicalLoginPage = () => {
               Access Portal
             </button>
 
-            {formData.userType === "patient" && (
+            {/* {formData.userType === "patient" && (
               <>
                 <div className="mlp-divider">
                   <span>OR</span>
@@ -132,7 +131,7 @@ const MedicalLoginPage = () => {
                   </button>
                 </div>
               </>
-            )}
+            )} */}
           </form>
 
           <div className="mlp-signup-link">
